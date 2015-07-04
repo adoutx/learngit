@@ -1,0 +1,14 @@
+mkdir #创建目录
+cd #设置工作目录
+pwd #命令用于显示当前目录
+git init #通过git init命令把这个目录变成Git可以管理的仓库
+ls -ah #显示列表
+git add #添加到stage
+git commit #提交到仓库  -m “备注”
+git status #版本库状态
+git diff #文件修改情况
+git log #版本库历史记录 #--pretty=oneline 简化显示结果
+HEAD #表示当前版本 HEAD^ 上一个版本 ^^ ~100 上N个版本
+git reset --hard #恢复到之前的版本
+cat #查看文件
+git reflog #查看命令记录
