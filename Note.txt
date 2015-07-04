@@ -5,10 +5,17 @@ git init #通过git init命令把这个目录变成Git可以管理的仓库
 ls -ah #显示列表
 git add #添加到stage
 git commit #提交到仓库  -m “备注”
-git status #版本库状态
+git status #版本库缓存区stage状态
 git diff #文件修改情况
 git log #版本库历史记录 #--pretty=oneline 简化显示结果
 HEAD #表示当前版本 HEAD^ 上一个版本 ^^ ~100 上N个版本
 git reset --hard #恢复到之前的版本
 cat #查看文件
 git reflog #查看命令记录
+ssh-keygen -t rsa -C "youremail@example.com" #设置远程库密码
+git remote add origin git@github.com:adoutx/learngit.git #链接远程库SSH
+git push origin master #推送 首次加-u
+git checkout -- file #让文件回到最近一次git commit或git add时的状态
+git reset HEAD file #退回added的文件修改
+rm #删除工作区的文件
+git rm #删除已经提交的文件
